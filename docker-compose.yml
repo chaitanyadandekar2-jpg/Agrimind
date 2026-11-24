@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-4o-mini}
+      - LLM_BASE_URL=${LLM_BASE_URL:-}
+      - FRONTEND_ORIGIN=http://localhost:5173
+      - CHROMA_PERSIST_DIR=/app/vector_db
+      - UPLOAD_DIR=/app/uploads
+    volumes:
+      - agrimind_vector_db:/app/vector_db
+      - agrimind_uploads:/app/uploads
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_BASE=http://localhost:8000
+    depends_on:
+      - backend
+
+volumes:
+  agrimind_vector_db:
+  agrimind_uploads:

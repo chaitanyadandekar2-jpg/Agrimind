@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+*.log
+
+# Backend runtime data
+backend/vector_db/
+vector_db/
+backend/uploads/
+uploads/
+backend/.env
+.env
+
+# Node
+node_modules/
+frontend/dist/
+dist/
+
+# Archives & Temporary
+*.zip
+*.tar.gz
+
+# Editor
+.vscode/
+.idea/
+.DS_Store

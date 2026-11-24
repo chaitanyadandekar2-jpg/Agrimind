@@ -1,0 +1,219 @@
+{
+  "nitrogen": {
+    "chemical": [
+      {
+        "name": "Urea (46% N)",
+        "application_method": "soil",
+        "growth_stage": "Vegetative Split (Basal + 30-45 DAS)",
+        "application_notes": "Apply in 2-3 split doses to reduce volatilization and leaching; avoid applying before forecast heavy rain.",
+        "compatibility_notes": "Do not mix with rock phosphate or lime.",
+        "source": "ICAR general fertilizer recommendation practice"
+      },
+      {
+        "name": "Ammonium Sulphate (21% N, 24% S)",
+        "application_method": "soil",
+        "growth_stage": "Basal / Top Dressing",
+        "application_notes": "Useful where sulphur is also deficient; slightly acidifying in alkaline soils.",
+        "compatibility_notes": "Safe with most phosphatic and potassic fertilizers.",
+        "source": "ICAR general fertilizer recommendation practice"
+      }
+    ],
+    "organic": [
+      {
+        "name": "Farmyard Manure (FYM)",
+        "application_method": "organic_incorporation",
+        "growth_stage": "Pre-sowing (2-3 weeks before planting)",
+        "application_notes": "Apply 10-15 tonnes/ha 2-3 weeks before sowing; improves N availability gradually and enhances soil microbial activity.",
+        "compatibility_notes": "Can be combined with biofertilizers like Azotobacter/Rhizobium.",
+        "source": "Organic soil amendment practice"
+      },
+      {
+        "name": "Vermicompost",
+        "application_method": "organic_incorporation",
+        "growth_stage": "Basal / In-furrow at sowing",
+        "application_notes": "Apply 2.5-5 tonnes/ha into topsoil; excellent for slow-release nitrogen plus active enzymes and humic substances.",
+        "compatibility_notes": "Ideal with mycorrhiza and trichoderma.",
+        "source": "Organic soil amendment practice"
+      }
+    ]
+  },
+  "phosphorus": {
+    "chemical": [
+      {
+        "name": "Single Super Phosphate (SSP, 16% P2O5, 11% S)",
+        "application_method": "soil",
+        "growth_stage": "Basal (at sowing)",
+        "application_notes": "Best applied basal (at sowing) placed near root zone since phosphorus is immobile in soil; provides valuable calcium and sulphur.",
+        "compatibility_notes": "Do not surface broadcast without soil incorporation.",
+        "source": "ICAR general fertilizer recommendation practice"
+      },
+      {
+        "name": "DAP (18-46-0)",
+        "application_method": "soil",
+        "growth_stage": "Basal (at sowing)",
+        "application_notes": "High P + some N; place 3-5 cm below and to the side of seed furrow to avoid seedling injury.",
+        "compatibility_notes": "Avoid direct contact with germinating seeds.",
+        "source": "ICAR general fertilizer recommendation practice"
+      }
+    ],
+    "organic": [
+      {
+        "name": "Rock Phosphate",
+        "application_method": "organic_incorporation",
+        "growth_stage": "Basal (Pre-sowing)",
+        "application_notes": "Slow-release mineral P source; works best in acidic soils or co-composted with FYM / PSB (phosphate solubilizing bacteria).",
+        "compatibility_notes": "Not effective in high-pH calcareous soils without microbial inoculation.",
+        "source": "Organic soil amendment practice"
+      },
+      {
+        "name": "Bone Meal",
+        "application_method": "organic_incorporation",
+        "growth_stage": "Basal (Pre-sowing)",
+        "application_notes": "Slow-release organic P and Ca source; mix thoroughly into the root zone prior to planting.",
+        "compatibility_notes": "Safe for organic certified crops.",
+        "source": "Organic soil amendment practice"
+      }
+    ]
+  },
+  "potassium": {
+    "chemical": [
+      {
+        "name": "Muriate of Potash (MOP, 60% K2O)",
+        "application_method": "soil",
+        "growth_stage": "Basal or early vegetative split",
+        "application_notes": "Apply basal or in early growth stage; avoid on chloride-sensitive crops like tobacco, potato, and grapes.",
+        "compatibility_notes": "High salt index; incorporate evenly into moist soil.",
+        "source": "ICAR general fertilizer recommendation practice"
+      },
+      {
+        "name": "Sulphate of Potash (SOP, 50% K2O, 17% S)",
+        "application_method": "soil",
+        "growth_stage": "Basal or Fertigation / Foliar",
+        "application_notes": "Chloride-free premium K source; highly recommended for vegetables, fruits, and saline-prone soils.",
+        "compatibility_notes": "Compatible with most soluble fertilizers.",
+        "source": "ICAR general fertilizer recommendation practice"
+      }
+    ],
+    "organic": [
+      {
+        "name": "Wood Ash",
+        "application_method": "organic_incorporation",
+        "growth_stage": "Basal (Pre-sowing)",
+        "application_notes": "Modest K source (3-7% K2O); has liming effect - avoid on already alkaline (pH > 7.5) soils.",
+        "compatibility_notes": "Do not mix directly with nitrogenous fertilizers to avoid ammonia gas loss.",
+        "source": "Organic soil amendment practice"
+      },
+      {
+        "name": "Composted Banana / Crop Residue",
+        "application_method": "organic_incorporation",
+        "growth_stage": "Basal (Pre-sowing)",
+        "application_notes": "Traditional regional K-rich organic input where available; mulch or incorporate into topsoil.",
+        "compatibility_notes": "Safe and improves moisture retention.",
+        "source": "Organic soil amendment practice"
+      }
+    ]
+  },
+  "organic_carbon": {
+    "chemical": [],
+    "organic": [
+      {
+        "name": "Green Manure (Dhaincha / Sunhemp)",
+        "application_method": "organic_incorporation",
+        "growth_stage": "Pre-season incorporation (45-50 DAS)",
+        "application_notes": "Grow and plough in at tender flowering stage (45-50 days after sowing) to add 15-20 tonnes/ha fresh biomass and build organic carbon.",
+        "compatibility_notes": "Reduces subsequent chemical N requirement by 25-30%.",
+        "source": "Organic soil amendment practice"
+      },
+      {
+        "name": "Compost / FYM / Biomass Mulch",
+        "application_method": "organic_incorporation",
+        "growth_stage": "Annual basal incorporation",
+        "application_notes": "Regular seasonal incorporation builds permanent organic carbon; best combined with minimum tillage and crop residue retention.",
+        "compatibility_notes": "Enhances water-holding capacity and cation exchange capacity.",
+        "source": "Organic soil amendment practice"
+      }
+    ]
+  },
+  "zinc": {
+    "chemical": [
+      {
+        "name": "Zinc Sulphate Heptahydrate (ZnSO4·7H2O, 21% Zn)",
+        "application_method": "soil",
+        "growth_stage": "Basal at sowing",
+        "application_notes": "Apply 25 kg/ha worked into soil once every 2-3 seasons for basal correction.",
+        "compatibility_notes": "Do not mix directly with phosphatic fertilizers (SSP/DAP) in tank or band (forms insoluble zinc phosphate).",
+        "source": "Common DTPA-Zn correction guidance"
+      },
+      {
+        "name": "Foliar Zinc Sulphate (0.5% ZnSO4 + 0.25% Lime)",
+        "application_method": "foliar",
+        "growth_stage": "Standing crop (Vegetative / Tillering)",
+        "application_notes": "For standing crop deficiency: spray 0.5% ZnSO4 neutralised with 0.25% slaked lime during calm weather (temp <30°C, wind <15 km/h).",
+        "compatibility_notes": "Spray early morning or late afternoon; avoid mid-day sun.",
+        "source": "Common DTPA-Zn correction guidance"
+      }
+    ],
+    "organic": [
+      {
+        "name": "Zinc-Enriched Farmyard Manure",
+        "application_method": "organic_incorporation",
+        "growth_stage": "Basal (Pre-sowing)",
+        "application_notes": "Incubate 10-15 kg ZnSO4 with 500 kg well-decomposed FYM for 30 days before field application; improves micronutrient uptake efficiency in high-pH soils.",
+        "compatibility_notes": "Prevents fixation of zinc in alkaline/calcareous soils.",
+        "source": "Organic micronutrient correction practice"
+      }
+    ]
+  },
+  "iron": {
+    "chemical": [
+      {
+        "name": "Ferrous Sulphate Foliar Spray (FeSO4·7H2O, 19% Fe, 0.5-1.0%)",
+        "application_method": "foliar",
+        "growth_stage": "Vegetative stage upon chlorosis symptoms",
+        "application_notes": "Soil application of iron is often fixed in alkaline/calcareous soils; foliar spray of 0.5-1% FeSO4 with 0.1% citric acid is significantly more effective.",
+        "compatibility_notes": "Apply twice at 10-14 day intervals in morning or evening.",
+        "source": "Common DTPA-Fe correction guidance"
+      }
+    ],
+    "organic": [
+      {
+        "name": "Compost / FYM with Humic Substances",
+        "application_method": "organic_incorporation",
+        "growth_stage": "Basal / Mulch",
+        "application_notes": "Improves overall iron and micronutrient availability over time by lowering rhizosphere pH locally and releasing natural organic chelators.",
+        "compatibility_notes": "Essential for calcareous soils with pH > 7.8.",
+        "source": "Organic soil amendment practice"
+      }
+    ]
+  },
+  "sulphur": {
+    "chemical": [
+      {
+        "name": "Agricultural Gypsum (Calcium Sulphate, 16-18% S, 22% Ca)",
+        "application_method": "soil",
+        "growth_stage": "Basal (at sowing)",
+        "application_notes": "Excellent sulphur source that also reclaims sodic and alkaline soils; broadcast and incorporate into moist soil.",
+        "compatibility_notes": "Improves soil structure and water infiltration.",
+        "source": "Common sulphur correction guidance"
+      },
+      {
+        "name": "Elemental Sulphur (80-90% S)",
+        "application_method": "soil",
+        "growth_stage": "Pre-sowing (3-4 weeks prior)",
+        "application_notes": "High concentration sulphur; slower-acting as it requires soil microbial oxidation (Thiobacillus) to convert to plant-available sulphate.",
+        "compatibility_notes": "Has strong acidifying effect; excellent for high-pH soils.",
+        "source": "Common sulphur correction guidance"
+      }
+    ],
+    "organic": [
+      {
+        "name": "FYM / Bio-compost",
+        "application_method": "organic_incorporation",
+        "growth_stage": "Basal (Pre-sowing)",
+        "application_notes": "Contains modest organic sulphur alongside N, P, K; builds organic matter and microbial cycling over successive seasons.",
+        "compatibility_notes": "Safe and sustainable long-term amendment.",
+        "source": "Organic soil amendment practice"
+      }
+    ]
+  }
+}
