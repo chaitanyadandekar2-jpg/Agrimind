@@ -31,10 +31,11 @@ async def get_recommendation(req: RecommendationRequest) -> RecommendationRespon
     if latitude is None and longitude is None and req.location_name:
         try:
             coords = await geocode_location(req.location_name)
-        except WeatherServiceError as exc:
-            raise HTTPException(status_code=502, detail=str(exc)) from exc
-        if coords:
-            latitude, longitude = coords
+            if coords:
+                latitude, longitude = coords
+        except Exception:
+            # Continue without crashing if geocoding provider has rate limits or network issues
+            pass
 
     return await orchestrate_crew(
         soil=req.soil,

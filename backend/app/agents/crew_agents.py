@@ -263,11 +263,11 @@ async def execute_weather_intelligence(
 
     try:
         forecast = await weather_service.get_forecast(latitude, longitude)
-    except weather_service.WeatherServiceError as exc:
+    except Exception as exc:
         window = ApplicationWindow(
             recommendation="YES" if needs_application else "NO",
             apply_today="WAIT",
-            reason=f"Weather service error: {exc}",
+            reason=f"Weather forecast temporarily unavailable ({exc}). Proceed with standard application guidelines.",
             application_type=application_type,
         )
         return WeatherIntelligenceOutput(application_window=window)
@@ -312,8 +312,12 @@ def execute_knowledge_retrieval(
             query_parts.append(f"deficiency correction {' '.join(low_n)}")
 
     full_query = " ".join(query_parts).strip()
-    evidence_items = retrieve_evidence(full_query, top_k=top_k, category=category)
-    sources = list(set(e.source for e in evidence_items))
+    try:
+        evidence_items = retrieve_evidence(full_query, top_k=top_k, category=category)
+        sources = list(set(e.source for e in evidence_items))
+    except Exception:
+        evidence_items = []
+        sources = []
 
     return KnowledgeRetrievalOutput(
         evidence=evidence_items,
